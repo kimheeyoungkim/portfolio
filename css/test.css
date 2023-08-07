@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #4e4742;
-    min-width: 1320px;
+/*     min-width: 1320px; */
 }
 
 /* 스크롤 */
@@ -32,6 +32,28 @@ body {
     border-radius: 10px;
     box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
 }
+
+.popup_in_01::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 10px;
+}
+
+.popup_in_01::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #000000;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.popup_in_01::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px rgb(0, 0, 0);
+}
+
+
 
 /* 스크롤 */
 
@@ -129,8 +151,7 @@ a {
 
 .con1_2 {
     background: url(../img/bg/bg.png) center;
-    background-size: cover;
-    background-size: cover;
+    background-size: 90%;
     width: calc(100% - 10vh);
     text-align: center;
 }
@@ -163,7 +184,7 @@ a {
 /* /////////////////////con2////////////////////// */
 #con2 {
 
-    height: 120%;
+   /*  height: 290%; */
     border-bottom: 1px solid #000;
     display: -webkit-box;
     display: -moz-box;
@@ -178,7 +199,7 @@ a {
     width: 5vh;
     border-right: 1px solid #000;
 }
-
+/* ////////////con2 ptflo////////// */
 .con2_2 {
     width: calc(100% - 10vh);
 }
@@ -199,14 +220,16 @@ a {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    width: 1320px;
+    width: 78%;
     margin: auto;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    margin-bottom: 80px;
 }
 
 .con2_2_box ul li {
-    box-shadow: #4e4742 0 0 0 1px inset;
+   /*  box-shadow: #4e4742 0 0 0 1px inset; */
     margin-bottom: 20px;
+   
 }
 
 .con2_2_box ul p {
@@ -220,9 +243,43 @@ a {
     background-color: #4e4742;
     color: #ffe5d4;
     text-decoration: none;
-
 }
 
+.litext{display:block; width:100%; text-align: left; }
+.lit{font-weight: 200; margin-left: 60px;}
+.lit02{margin-top: 80px;}
+/* ///////////popup/////////// */
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;/*팝업 안보이게 만들기*/
+}
+.popup_in{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+
+
+}
+.popup div p a{color:#4e4742; font-size: 50px; font-weight: 300;padding-left:5px;}
+.popup_in_01{overflow-y: scroll; width: 510px; height: 500px;}
+.bannerp01 img, .bannerp02 img{width: 100%; }
+
+/* .popup_in_01 img{box-shadow: inset 0 0 0 1px;} */
+/* ///////////popup/////////// */
+
+/* media */
+
+/* media */
 
 
 .con2_3 {
@@ -231,12 +288,17 @@ a {
     border-left: 1px solid #000;
 }
 
+
+
+
+
+
 /* /////////////////////con2////////////////////// */
 
 /* /////////////////////con3////////////////////// */
 #con3 {
 
-    height: 90vh;
+   /*  height: 90vh; */
     border-bottom: 1px solid #000;
     display: -webkit-box;
     display: -moz-box;
@@ -274,14 +336,17 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 
 }
 
 .con3_2_box ul li {
     width: 467px;
-    text-align: left;
+    text-align: center;
     line-height: 30px;
     word-spacing: 1px;
+    margin-bottom: 30px;
 }
 
 .con3_2_box ul li p {
@@ -311,7 +376,7 @@ a {
 
 /* /////////////////////con4////////////////////// */
 #con4 {
-    height: 90vh;
+   /*  height: 90vh; */
     border-bottom: 1px solid #000;
     display: -webkit-box;
     display: -moz-box;
@@ -329,17 +394,21 @@ a {
     width: calc(100% - 10vh);
 }
 
+.con4_2 h2{margin-bottom: -80px;}
 .con4_3 {
     width: 5vh;
     border-left: 1px solid #000;
 }
+.row{margin-bottom: 80px;}
+.timeline { width: 80%;
+margin: auto;}
 
 /* /////////////////////con4////////////////////// */
 
 
 /* /////////////////////con5////////////////////// */
 #con5 {
-    height: 90vh;
+   /*  height: 90vh; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
