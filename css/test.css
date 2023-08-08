@@ -209,8 +209,8 @@ a {
 }
 
 .con2_2_box h2 {
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 200;
+    font-size: 60px;
     margin: 80px 0 50px;
 }
 
@@ -324,8 +324,8 @@ display: flex;
 }
 
 .con3_2_box h2 {
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 200;
+    font-size: 60px;
     margin: 80px 0 50px;
 }
 
@@ -394,7 +394,7 @@ display: flex;
     width: calc(100% - 10vh);
 }
 
-.con4_2 h2{margin-bottom: -80px;}
+.con4_2 h2{margin-bottom: -80px; font-size: 60px; font-weight: 200;}
 .con4_3 {
     width: 5vh;
     border-left: 1px solid #000;
